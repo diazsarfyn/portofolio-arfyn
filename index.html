@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arfyn Diazs Aryada | Portfolio</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans (Modern & Bersih) & Playfair Display (Aksen Elegan) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+  <!-- File Styling Eksternal (Vanilla CSS) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       NAVBAR (MENU NAVIGASI MELAYANG)
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero">
+        <span></span> <strong> Arfyn.id </strong>
+      </a>
+
+      <!-- Menu Link Utama -->
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">Tentang</a></li>
+          <li><a href="#skills" class="nav-link">Tech Stack</a></li>
+          <li><a href="#projects" class="nav-link">Projek</a></li>
+          <li><a href="#contact" class="nav-cta">Hubungi Saya</a></li>
+        </ul>
+      </nav>
+
+      <!-- Tombol Hamburger Mobile -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION (HALAMAN PERTAMA)
+         ========================================================================== -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Kolom Teks / Perkenalan -->
+          <div class="hero-content fade-up">
+            <div class="">
+            
+            </div>
+
+            <p class="hero-greeting">Halo semuanya! Salam kenal, saya</p>
+            <h1 class="hero-title">
+              Arfyn Diazs <br />
+              <span class="hero-title">Aryada</span>
+            </h1>
+
+            <p class="hero-description">
+              <strong>Informatics Student</strong> <strong>Universitas Perjuangan Tasikmalaya</strong> yang sedang antusias mengeksplorasi dan memperdalam dunia <em>web</em> serta pengembangan software modern, baik front-end maupun back-end.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">
+                Lihat Projek Latihan
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#about" class="btn btn-secondary">
+                About Me
+              </a>
+            </div>
+          </div>
+
+          <!-- Kolom Frame Foto Estetik -->
+          <div class="hero-photo-wrapper fade-up">
+            <div class="photo-outer-ring">
+              <div class="photo-inner-frame">
+                <!-- 
+                  PANDUAN UNTUK ARFYN:
+                  Ganti url gambar di bawah (src) dengan file foto aslimu,
+                  misalnya: src="foto-profil.jpg" jika foto diletakkan di satu folder yang sama.
+                -->
+                <img 
+                  src="profil.jpeg" 
+                  alt="Foto Profil Arfyn Diazs Aryada" 
+                  class="profile-image" 
+                  id="profileImg"
+                />
+              </div>
+
+              <!-- Tag melayang kecil di frame -->
+              <div class="photo-floating-pill">
+                <span></span> Tech Explorer
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT ME SECTION (TENTANG SAYA)
+         ========================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        
+        <div class="section-header fade-up">
+          <span class="section-tag">Tentang Saya</span>
+          <h2 class="section-title">Antusias Belajar &amp; <span class="serif-highlight">Ngulik Kode</span></h2>
+          <p class="section-subtitle">
+            Kisah singkat di balik rasa penasaran saya terhadap dunia pemrograman dan teknologi.
+          </p>
+        </div>
+
+        <div class="about-card fade-up">
+          <!-- Kolom Cerita Naratif -->
+          <div class="about-story">
+            <h3>"Dari penasaran cara kerja website, sampai ketagihan ngoding tiap malam."</h3>
+            <p>
+              Halo! Saya Arfyn, mahasiswa Teknik Informatika di Universitas Perjuangan (UNPER) Tasikmalaya. Bagi saya, pemrograman itu bukan sekadar mengetik baris kode, tapi wadah seru untuk memecahkan masalah logika dan mewujudkan ide menjadi aplikasi nyata yang interaktif.
+            </p>
+            <p>
+              Saat ini di Kelas , saya aktif belajar algoritma dengan <strong>C++</strong>, menyusun struktur dan estetika lewat <strong>HTML &amp; CSS</strong>, membuat interaksi dinamis dengan <strong>JavaScript</strong>, serta mengeksplorasi kemudahan <strong>Python</strong> dan sistem <strong>Database</strong>. Saya selalu bersemangat mempelajari hal-hal baru dan terbuka untuk diskusi santai seputar teknologi!
+            </p>
+          </div>
+
+          <!-- Kolom Kartu Fakta Cepat -->
+          <div class="quick-facts">
+            <div class="fact-item">
+              <div class="fact-icon">🎓</div>
+              <div class="fact-text">
+                <div class="fact-label">Pendidikan</div>
+                <div class="fact-value">Teknik Informatika</div>
+              </div>
+            </div>
+
+            <div class="fact-item">
+              <div class="fact-icon">🏛️</div>
+              <div class="fact-text">
+                <div class="fact-label">Kampus</div>
+                <div class="fact-value">Universitas Perjuangan (UNPER)</div>
+              </div>
+            </div>
+
+            <div class="fact-item">
+              <div class="fact-icon">📍</div>
+              <div class="fact-text">
+                <div class="fact-label">Lokasi</div>
+                <div class="fact-value">Tasikmalaya, Jawa Barat</div>
+              </div>
+            </div>
+
+            <div class="fact-item">
+              <div class="fact-icon">💡</div>
+              <div class="fact-text">
+                <div class="fact-label">Fokus Utama</div>
+                <div class="fact-value">Web &amp; Application Exploration</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         MY TECH STACK (SKILLS & TOOLS YANG SEDANG DIPELAJARI)
+         ========================================================================== -->
+    <section class="section" id="skills" style="background-color: #F3EFE7;">
+      <div class="container">
+        
+        <div class="section-header fade-up">
+          <span class="section-tag">Tech Stack</span>
+          <h2 class="section-title">Alat &amp; <span class="serif-highlight">Teknologi</span></h2>
+          <p class="section-subtitle">
+            Bahasa pemrograman dan teknologi yang sedang aktif saya pelajari dan tekuni saat ini.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill 1: C++ -->
+          <div class="skill-card fade-up">
+            <div class="skill-icon-box">⚙️</div>
+            <h3 class="skill-name">C++</h3>
+            <p class="skill-desc">Logika Algoritma &amp; Pemecahan Masalah</p>
+          </div>
+
+          <!-- Skill 2: HTML -->
+          <div class="skill-card fade-up">
+            <div class="skill-icon-box">🌐</div>
+            <h3 class="skill-name">HTML</h3>
+            <p class="skill-desc">Struktur Halaman Web Semantik</p>
+          </div>
+
+          <!-- Skill 3: CSS -->
+          <div class="skill-card fade-up">
+            <div class="skill-icon-box">🎨</div>
+            <h3 class="skill-name">CSS</h3>
+            <p class="skill-desc">Styling, Tata Letak &amp; Desain Responsif</p>
+          </div>
+
+          <!-- Skill 4: JavaScript -->
+          <div class="skill-card fade-up">
+            <div class="skill-icon-box">⚡</div>
+            <h3 class="skill-name">JavaScript</h3>
+            <p class="skill-desc">Manipulasi DOM &amp; Interaktivitas Web</p>
+          </div>
+
+          <!-- Skill 5: Python -->
+          <div class="skill-card fade-up">
+            <div class="skill-icon-box">🐍</div>
+            <h3 class="skill-name">Python</h3>
+            <p class="skill-desc">Sintaks Bersih, Scripting &amp; Logika</p>
+          </div>
+
+          <!-- Skill 6: Database -->
+          <div class="skill-card fade-up">
+            <div class="skill-icon-box">🗄️</div>
+            <h3 class="skill-name">Database</h3>
+            <p class="skill-desc">Manajemen Relasional &amp; Struktur Data</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         MY JOURNEY / PROJECTS SECTION (PROJEK LATIHAN & KAMPUS)
+         ========================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        
+        <div class="section-header fade-up">
+          <h2 class="section-title">Eksplorasi &amp; <span class="serif-highlight">Projek Latihan</span></h2>
+          <p class="section-subtitle">
+            Beberapa projek mini dan tugas kuliah yang saya kerjakan selama proses belajar ngoding.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Card Projek 1 -->
+          <div class="project-card fade-up">
+            <div class="project-cover">
+              <div class="project-mockup-badge">
+                <span>📍</span> C++ Console App
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">Algoritma</span>
+                <span class="tech-tag">CLI</span>
+              </div>
+              <h3 class="project-title">Sistem Navigasi Kampus C++</h3>
+              <p class="project-desc">
+                Program konsol berbasis bahasa C++ untuk mensimulasikan pencarian rute gedung kampus UNPER dengan struktur data graf dan logika algoritma terstruktur.
+              </p>
+              <div class="project-footer">
+                <a href="https://diazsarfyn.github.io/navigasi-kampus/" target="_blank" class="project-link">
+                  Lihat Kode Repo <span>→</span>
+                </a>
+                <span class="project-status">Tugas Algoritma</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Projek 2 -->
+          <div class="project-card fade-up">
+            <div class="project-cover">
+              <div class="project-mockup-badge">
+                <span>✨</span> Interactive Web
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <h3 class="project-title">Web Interaktif Sederhana</h3>
+              <p class="project-desc">
+                Eksplorasi pembuatan antarmuka web modern dengan manipulasi DOM murni (Vanilla JS), animasi transisi halus, dan layout adaptif untuk mobile.
+              </p>
+              <div class="project-footer">
+                <a href="#" class="project-link">
+                  Live Preview <span>→</span>
+                </a>
+                <span class="project-status">Latihan Web</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Projek 3 -->
+          <div class="project-card fade-up">
+            <div class="project-cover">
+              <div class="project-mockup-badge">
+                <span>📝</span> Data Management
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Database</span>
+                <span class="tech-tag">Form UI</span>
+              </div>
+              <h3 class="project-title">Form Pendataan Mahasiswa</h3>
+              <p class="project-desc">
+                Aplikasi formulir input data mahasiswa dengan validasi realtime, penyimpanan tabel terstruktur, serta antarmuka yang bersih dan ramah pengguna.
+              </p>
+              <div class="project-footer">
+                <a href="https://github.com" target="_blank" class="project-link">
+                  Lihat Kode Repo <span>→</span>
+                </a>
+                <span class="project-status">Projek Mandiri</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       CONTACT & FOOTER (BAGIAN AKHIR / HUBUNGI SAYA)
+       Warna latar menggunakan palet Espresso (#3C2415)
+       ========================================================================== -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-content fade-up">
+        <span class="footer-badge">Let's Connect</span>
+        <h2 class="footer-title">Tertarik ngobrol santai atau kolaborasi bareng?</h2>
+        <p class="footer-subtitle">
+          Pintu selalu terbuka untuk diskusi teknologi, berbagi tips ngoding, atau sekadar berteman sesama penggiat IT!
+        </p>
+
+        <!-- Placeholder Tautan Media Sosial -->
+        <div class="social-links">
+          <!-- Placeholder GitHub -->
+          <a href="https://github.com/diazsarfyn" target="_blank" rel="noopener noreferrer" class="social-btn">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+            </svg>
+            GitHub
+          </a>
+
+          <!-- Placeholder Instagram -->
+          <a href="https://www.instagram.com/arfyn.ar?exln=MW9iMTNubTg5OXl1cw==" target="_blank" rel="noopener noreferrer" class="social-btn">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            Instagram
+          </a>
+
+          <!-- Placeholder Email -->
+          <a href="mailto:diazsarfyn@gmail.com" class="social-btn">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            Kirim Email
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Arfyn Diazs Aryada • Kota Tasikmalaya</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- File Skrip Eksternal (Vanilla JS) -->
+  <script src="script.js"></script>
+</body>
+</html>
