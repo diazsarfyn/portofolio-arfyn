@@ -509,10 +509,12 @@ img {
    ========================================================================== */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  /* Hapus 1fr dan ganti dengan ukuran pasti biar kotak tidak melar */
+  grid-template-columns: repeat(auto-fit, 160px); 
+  /* Kunci utama biar semua kotak ngumpul rapi di tengah layar */
+  justify-content: center; 
   gap: 20px;
 }
-
 .skill-card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-subtle);
@@ -561,10 +563,6 @@ img {
   transition: var(--transition);
 }
 
-.skill-card:hover .skill-icon-box {
-  background-color: var(--pale-oak);
-  transform: scale(1.1);
-}
 
 .skill-name {
   font-size: 1.02rem;
